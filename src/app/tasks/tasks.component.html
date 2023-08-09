@@ -1,0 +1,7 @@
+<div class="form-check" *ngFor="let item of data">
+    <input class="form-check-input" type="checkbox" value="" id="{{ item.label }}" [(ngModel)]="item.isChecked">
+    <label class="form-check-label" for="{{ item.label }}" [ngClass]="{ 'active': item.isChecked }" >
+      {{ item.label }} {{ item.title }}
+    </label>
+  </div>
+  
